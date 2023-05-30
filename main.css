@@ -1,0 +1,114 @@
+@font-face {
+    font-family: getSchwifty;
+    src: url("/getSchwifty.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: bor;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    display:flex;
+    flex-flow: column wrap;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    background-image: linear-gradient(180deg, black 25%, #68797a 50%, #DBD6D0 70%);
+    background-size: cover;
+}
+
+#container {
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#searchBar {
+    text-align: center;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 2px;
+    background: #f1f1f1;
+ }
+
+#submit {
+    border:1px solid grey;
+    background: #9faeb9;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 17px;
+    justify-content: center; 
+    box-shadow: 5px 5px 10px 2px;
+}
+
+#submit:hover {
+    background-color: #93b4cfed;
+}
+
+#resultContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #DBD6D0;
+    width: 100%;
+    padding-top: 40px;
+}
+
+#result-card {
+    width: 600px;
+    display: flex;
+    border: 2px solid gray;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+#image-container {
+    width: 45%;
+    object-fit: contain;
+}
+
+#details-container {
+    width: 100%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+#details-container h1 {
+    margin-bottom: 10px;
+}
+
+#rick {
+    text-align: center;
+    margin: 0 auto;
+    padding: 70px;
+    font-size: 90px;
+    font-family: getSchwifty;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: #71d144;
+    -webkit-text-fill-color: #0bb4e4;
+}
+
+img {
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    object-fit: contain;
+    float: left;
+    overflow: hidden;
+}
